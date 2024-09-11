@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Projet Famille</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff4d4d;
+            padding: 20px;
+            color: white;
+            font-size: 2em;
+        }
+        .container {
+            margin: 50px auto;
+            width: 80%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #ff6666;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .btn {
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #ff3333;
+        }
+        footer {
+            margin-top: 50px;
+            color: #666;
+        }
+        .question {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        .answers {
+            margin-bottom: 20px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Quiz - Projet Famille avec Felicia ❤️
+</header>
+
+<div class="container">
+    <form action="send_mail.php" method="POST">
+        <div class="container">
+            
+            <p>Découvre pourquoi un mini-nous pourrait être la meilleure aventure ! Réponds aux questions avec humour et amour ❤️</p>
+            
+            <!-- Quiz starts here -->
+            <form id="quizForm">
+        
+                <!-- Question 1 -->
+                <div class="question">
+                    1. Si notre enfant fait sa première bêtise, tu...
+                </div>
+                <div class="answers">
+                    <label><input type="radio" name="q1" value="a"> Le fais participer à une pub pour du savon ? 😂</label><br>
+                    <label><input type="radio" name="q1" value="b"> Lui expliques calmement les règles, avec amour ?</label><br>
+                    <label><input type="radio" name="q1" value="c"> Demandes à papa d’intervenir 😜</label><br>
+                </div>
+        
+                <!-- Question 2 -->
+                <div class="question">
+                    2. S'il dit "Messi" avant "maman", tu...
+                </div>
+                <div class="answers">
+                    <label><input type="radio" name="q2" value="a"> Le renvoies jouer dans le jardin !</label><br>
+                    <label><input type="radio" name="q2" value="b"> T’en amuses parce que tu sais que le foot, c’est dans nos gènes 🥰</label><br>
+                    <label><input type="radio" name="q2" value="c"> Réponds "Messi qui ?" et rigoles 😂</label><br>
+                </div>
+        
+                <!-- Question 3 -->
+                <div class="question">
+                    3. On joue tous ensemble à cache-cache, tu...
+                </div>
+                <div class="answers">
+                    <label><input type="radio" name="q3" value="a"> Trouves toujours les meilleures cachettes !</label><br>
+                    <label><input type="radio" name="q3" value="b"> Te caches avec moi, c’est mieux en duo 😉</label><br>
+                    <label><input type="radio" name="q3" value="c"> Le laisses gagner pour qu’il soit content, mais juste une fois !</label><br>
+                </div>
+        
+                <!-- Question 4 -->
+                <div class="question">
+                    4. Quelle serait la première chose que tu lui apprendrais ?
+                </div>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="a"> À dire "Je t’aime" 💖</label><br>
+                    <label><input type="radio" name="q4" value="b"> À reconnaître le drapeau de Ferrari ! 🏎️</label><br>
+                    <label><input type="radio" name="q4" value="c"> À prononcer "papa" correctement (désolé maman 😅)</label><br>
+                </div>
+        
+                <!-- Question 5 -->
+                <div class="question">
+                    5. Imagine notre enfant et toi, un samedi matin... Tu préfères :
+                </div>
+                <div class="answers">
+                    <label><input type="radio" name="q5" value="a"> Préparer des crêpes pour toute la famille 🍳</label><br>
+                    <label><input type="radio" name="q5" value="b"> Rester sous la couette à raconter des histoires ensemble 📖</label><br>
+                    <label><input type="radio" name="q5" value="c"> Mettre un dessin animé et danser dans le salon !</label><br>
+                </div>
+        
+                <!-- Question 6 -->
+                <div class="question">
+                    6. Pour le premier déguisement de notre enfant, tu préfères :
+                </div>
+                <div class="answers">
+                    <label><input type="radio" name="q6" value="a"> Le déguiser en mini Ferrari Driver 🏎️</label><br>
+                    <label><input type="radio" name="q6" value="b"> En mini Lionel Messi avec un ballon ⚽</label><br>
+                    <label><input type="radio" name="q6" value="c"> En super-héros pour sauver papa ! 🦸‍♂️</label><br>
+                </div>
+        
+                <!-- Question 7 -->
+                <div class="question">
+                    7. Si notre enfant dessine un chef-d'œuvre sur le mur du salon, tu...
+                </div>
+                <div class="answers">
+                    <label><input type="radio" name="q7" value="a"> Fais une exposition et invites tout le quartier !</label><br>
+                    <label><input type="radio" name="q7" value="b"> Lui expliques calmement que les murs ne sont pas des toiles.</label><br>
+                    <label><input type="radio" name="q7" value="c"> Rigoles, et prends une photo pour immortaliser !</label><br>
+                </div>
+        
+                <!-- Question 8 -->
+                <div class="question">
+                    8. Imagine notre enfant dans 10 ans, il rêve de devenir :
+                </div>
+                <div class="answers">
+                    <label><input type="radio" name="q8" value="a"> Le prochain grand footballeur !</label><br>
+                    <label><input type="radio" name="q8" value="b"> Un champion de F1 comme Charles Leclerc.</label><br>
+                    <label><input type="radio" name="q8" value="c"> Un artiste, avec ses propres expositions.</label><br>
+                </div>
+        
+                <!-- Question 9 -->
+                <div class="question">
+                    9. Quand il s'agit de l’éduquer, tu préfères :
+                </div>
+                <div class="answers">
+                    <label><input type="radio" name="q9" value="a"> L'élever avec des valeurs simples et bienveillantes.</label><br>
+                    <label><input type="radio" name="q9" value="b"> Le laisser libre d’explorer ce qu’il aime.</label><br>
+                    <label><input type="radio" name="q9" value="c"> Encourager ses passions, même si c’est devenir pilote de F1.</label><br>
+                </div>
+        
+                <!-- Question 10 -->
+                <div class="question">
+                    10. La meilleure saison pour profiter de moments en famille, c'est :
+                </div>
+                <div class="answers">
+                    <label><input type="radio" name="q10" value="a"> L’été, pour aller à la plage et manger des glaces.</label><br>
+                    <label><input type="radio" name="q10" value="b"> L’hiver, pour faire des batailles de neige.</label><br>
+                    <label><input type="radio" name="q10" value="c"> L’automne, pour sa
+    </div>
+
+    <!-- Question 11 -->
+    <div class="question">
+        11. Si notre enfant demande pourquoi le ciel est bleu, tu lui dis...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q11" value="a"> "Parce que maman et papa l’ont peint ainsi !" 🎨</label><br>
+        <label><input type="radio" name="q11" value="b"> "Va demander à papa, c’est lui l’expert !" 😅</label><br>
+        <label><input type="radio" name="q11" value="c"> "La lumière, ça se mélange, mon petit génie !"</label><br>
+    </div>
+
+    <!-- Question 12 -->
+    <div class="question">
+        12. Quelle est la première chose que tu achètes pour notre bébé ?
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q12" value="a"> Un petit maillot de foot ! ⚽</label><br>
+        <label><input type="radio" name="q12" value="b"> Une mini-combinaison Ferrari 🏎️</label><br>
+        <label><input type="radio" name="q12" value="c"> Un livre pour enfants avec des histoires amusantes 📚</label><br>
+    </div>
+
+    <!-- Question 13 -->
+    <div class="question">
+        13. Notre enfant pleure sans raison, tu...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q13" value="a"> Le câlines jusqu’à ce qu’il se calme ❤️</label><br>
+        <label><input type="radio" name="q13" value="b"> Lui mets une petite chanson qu’il aime.</label><br>
+        <label><input type="radio" name="q13" value="c"> Cherches ce qui ne va pas pour mieux l’aider.</label><br>
+    </div>
+
+    <!-- Question 14 -->
+    <div class="question">
+        14. Si notre enfant fait une crise au supermarché, tu...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q14" value="a"> Lui proposes de choisir un petit jouet ?</label><br>
+        <label><input type="radio" name="q14" value="b"> Tentes de le calmer avec douceur ?</label><br>
+        <label><input type="radio" name="q14" value="c"> Te caches dans un rayon et attends que ça passe 😂</label><br>
+    </div>
+
+    <!-- Question 15 -->
+    <div class="question">
+        15. Tu te vois déjà nous appeler "la petite famille..."
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q15" value="a"> Footballeur</label><br>
+        <label><input type="radio" name="q15" value="b"> Des Ferrari 🏎️</label><br>
+        <label><input type="radio" name="q15" value="c"> Heureuse 😍</label><br>
+    </div>
+
+    <!-- Question 16 -->
+    <div class="question">
+        16. Le prénom idéal pour notre enfant, c’est...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q16" value="a"> Un prénom de champion !</label><br>
+        <label><input type="radio" name="q16" value="b"> Un prénom classique qui sonne bien ?</label><br>
+        <label><input type="radio" name="q16" value="c"> Un prénom avec une signification spéciale pour nous.</label><br>
+    </div>
+
+    <!-- Question 17 -->
+    <div class="question">
+        17. Pour un voyage en famille, tu choisis...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q17" value="a"> Un road-trip en Italie pour voir des matchs de foot.</label><br>
+        <label><input type="radio" name="q17" value="b"> Disneyland, pour profiter à fond ! 🎢</label><br>
+        <label><input type="radio" name="q17" value="c"> La plage, pour faire des châteaux de sable ensemble.</label><br>
+    </div>
+
+    <!-- Question 18 -->
+    <div class="question">
+        18. Le pire cauchemar en tant que parent serait...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q18" value="a"> Ne plus avoir de Nutella à la maison !</label><br>
+        <label><input type="radio" name="q18" value="b"> Ne pas réussir à les rendre heureux.</label><br>
+        <label><input type="radio" name="q18" value="c"> Voir notre enfant grandir trop vite.</label><br>
+    </div>
+
+    <!-- Question 19 -->
+    <div class="question">
+        19. L’un des plus beaux moments avec notre enfant serait...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q19" value="a"> Le voir jouer son premier match de foot.</label><br>
+        <label><input type="radio" name="q19" value="b"> Entendre son premier "je t’aime".</label><br>
+        <label><input type="radio" name="q19" value="c"> Le voir faire ses premiers pas.</label><br>
+    </div>
+
+    <!-- Question 20 -->
+    <div class="question">
+        20. Le rôle de papa, c’est surtout...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q20" value="a"> D’apprendre à notre enfant à tirer comme un pro !</label><br>
+        <label><input type="radio" name="q20" value="b"> De l’encourager dans ses rêves.</label><br>
+        <label><input type="radio" name="q20" value="c"> De faire des câlins et des blagues ensemble.</label><br>
+    </div>
+
+    <!-- Question 21 -->
+    <div class="question">
+        21. La première chose que tu veux enseigner à notre enfant c'est...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q21" value="a"> Le respect et l’amour des autres.</label><br>
+        <label><input type="radio" name="q21" value="b"> Comment dire "Allez les bleus !" au bon moment.</label><br>
+        <label><input type="radio" name="q21" value="c"> À rêver grand et ne jamais abandonner.</label><br>
+    </div>
+
+    <!-- Question 22 -->
+    <div class="question">
+        22. Pour une sortie en famille, tu préfères...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q22" value="a"> Une journée au zoo.</label><br>
+        <label><input type="radio" name="q22" value="b"> Une après-midi au parc d’attractions.</label><br>
+        <label><input type="radio" name="q22" value="c"> Une balade en nature avec un pique-nique.</label><br>
+    </div>
+
+    <!-- Question 23 -->
+    <div class="question">
+        23. Tu veux qu’il ait des posters de...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q23" value="a"> Lionel Messi.</label><br>
+        <label><input type="radio" name="q23" value="b"> Charles Leclerc et Ferrari.</label><br>
+        <label><input type="radio" name="q23" value="c"> Super-héros et dessins animés.</label><br>
+    </div>
+
+    <!-- Question 24 -->
+    <div class="question">
+        24. Si notre enfant veut un animal de compagnie, tu dis...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q24" value="a"> "Oui, mais tu t’en occupes !"</label><br>
+        <label><input type="radio" name="q24" value="b"> "Pourquoi pas, mais un tout petit chien alors."</label><br>
+        <label><input type="radio" name="q24" value="c"> "On commence avec un poisson et on verra !" 🐠</label><br>
+    </div>
+
+    <!-- Question 25 -->
+    <div class="question">
+        25. Si notre enfant fait des caprices, tu...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q25" value="a"> Lui expliques qu’il ne peut pas tout avoir.</label><br>
+        <label><input type="radio" name="q25" value="b"> Tentes de comprendre pourquoi il est contrarié.</label><br>
+        <label><input type="radio" name="q25" value="c"> L’ignores pour qu’il se calme tout seul.</label><br>
+    </div>
+
+    <!-- Question 26 -->
+    <div class="question">
+        26. Le moment idéal pour avoir un enfant, c'est...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q26" value="a"> Quand on sera prêts tous les deux.</label><br>
+        <label><input type="radio" name="q26" value="b"> Quand on aura fait tous nos grands voyages.</label><br>
+        <label><input type="radio" name="q26" value="c"> Peut-être plus tôt qu’on ne le pense...</label><br>
+    </div>
+
+    <!-- Question 27 -->
+    <div class="question">
+        27. Si notre enfant te demande un câlin avant de dormir, tu...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q27" value="a"> Ne dis jamais non, évidemment.</label><br>
+        <label><input type="radio" name="q27" value="b"> Le berces jusqu’à ce qu’il s’endorme.</label><br>
+        <label><input type="radio" name="q27" value="c"> Fais une petite blague avant le câlin !</label><br>
+    </div>
+
+    <!-- Question 28 -->
+    <div class="question">
+        28. Tu préfères passer tes vacances en famille...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q28" value="a"> À la plage à profiter du soleil.</label><br>
+        <label><input type="radio" name="q28" value="b"> En montagne pour des aventures sportives.</label><br>
+        <label><input type="radio" name="q28" value="c"> Dans une ville culturelle pour visiter des musées.</label><br>
+    </div>
+
+    <!-- Question 29 -->
+    <div class="question">
+        29. Tu vois notre enfant dans 15 ans...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q29" value="a"> Diplômé et prêt à conquérir le monde.</label><br>
+        <label><input type="radio" name="q29" value="b"> Heureux et épanoui dans ses passions.</label><br>
+        <label><input type="radio" name="q29" value="c"> Toujours avec nous pour regarder un match de foot.</label><br>
+    </div>
+
+    <!-- Question 30 -->
+    <div class="question">
+        30. Pour toi, être parent, c’est surtout...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q30" value="a"> Un engagement plein d’amour.</label><br>
+        <label><input type="radio" name="q30" value="b"> Une aventure chaque jour différente.</label><br>
+        <label><input type="radio" name="q30" value="c"> Beaucoup de bonheur et d’amusement !</label><br>
+    </div>
+
+    <!-- Question 31 -->
+    <div class="question">
+        31. Si notre enfant dessine un mouton bizarre, tu dis...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q31" value="a"> "Un chef-d'œuvre moderne, mon artiste !"</label><br>
+        <label><input type="radio" name="q31" value="b"> "Voyons, il manque des pattes là..."</label><br>
+        <label><input type="radio" name="q31" value="c"> "Un mouton volant, je le savais !"</label><br>
+    </div>
+
+    <!-- Question 32 -->
+    <div class="question">
+        32. Tu préfères décorer sa chambre avec...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q32" value="a"> Des posters de ses héros favoris.</label><br>
+        <label><input type="radio" name="q32" value="b"> Des dessins qu’il a faits lui-même.</label><br>
+        <label><input type="radio" name="q32" value="c"> Des photos de famille pleines de souvenirs.</label><br>
+    </div>
+
+    <!-- Question 33 -->
+    <div class="question">
+        33. La première sortie à trois, tu veux...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q33" value="a"> Une balade dans un parc ensoleillé.</label><br>
+        <label><input type="radio" name="q33" value="b"> Un pique-nique au bord de l’eau.</label><br>
+        <label><input type="radio" name="q33" value="c"> Une promenade en bord de mer.</label><br>
+    </div>
+
+    <!-- Question 34 -->
+    <div class="question">
+        34. Quand notre enfant sera ado, tu veux...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q34" value="a"> Rester cool mais ferme sur les règles.</label><br>
+        <label><input type="radio" name="q34" value="b"> Lui laisser son espace pour qu’il s’épanouisse.</label><br>
+        <label><input type="radio" name="q34" value="c"> Partager des moments complices tout en le guidant.</label><br>
+    </div>
+
+    <!-- Question 35 -->
+    <div class="question">
+        35. Si notre enfant t’offre un collier de nouilles pour la fête des mères, tu...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q35" value="a"> Le portes fièrement toute la journée !</label><br>
+        <label><input type="radio" name="q35" value="b"> Le gardes comme un trésor précieux.</label><br>
+        <label><input type="radio" name="q35" value="c"> Le mets dans un cadre pour l’exposer !</label><br>
+    </div>
+
+    <!-- Question 36 -->
+    <div class="question">
+        36. Quand notre enfant commence à poser trop de questions, tu...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q36" value="a"> Lui réponds avec patience et amour.</label><br>
+        <label><input type="radio" name="q36" value="b"> Lui dis de poser la question à papa 😄</label><br>
+        <label><input type="radio" name="q36" value="c"> Transformes ses questions en petit jeu amusant !</label><br>
+    </div>
+
+    <!-- Question 37 -->
+    <div class="question">
+        37. Tu rêves de voir notre enfant exceller dans...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q37" value="a"> Le sport, comme un vrai champion !</label><br>
+        <label><input type="radio" name="q37" value="b"> Ses études, avec intelligence et persévérance.</label><br>
+        <label><input type="radio" name="q37" value="c"> Ce qu’il aime vraiment, peu importe ce que c’est.</label><br>
+    </div>
+
+    <!-- Question 38 -->
+    <div class="question">
+        38. Si notre enfant fait une grosse bêtise, tu...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q38" value="a"> Le punis gentiment, avec amour.</label><br>
+        <label><input type="radio" name="q38" value="b"> Lui expliques pourquoi c’est mal.</label><br>
+        <label><input type="radio" name="q38" value="c"> Fais en sorte qu’il comprenne par lui-même.</label><br>
+    </div>
+
+    <!-- Question 39 -->
+    <div class="question">
+        39. Un week-end parfait en famille, c’est...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q39" value="a"> Passer du temps dehors à faire du sport.</label><br>
+        <label><input type="radio" name="q39" value="b"> Rester à la maison pour regarder des films ensemble.</label><br>
+        <label><input type="radio" name="q39" value="c"> Partir à l’aventure pour créer des souvenirs.</label><br>
+    </div>
+
+    <!-- Question 40 -->
+    <div class="question">
+        40. La chose la plus importante pour nous en tant que parents, c’est...
+    </div>
+    <div class="answers">
+        <label><input type="radio" name="q40" value="a"> De voir notre enfant heureux et épanoui.</label><br>
+        <label><input type="radio" name="q40" value="b"> D’accomplir ensemble de belles choses.</label><br>
+        <label><input type="radio" name="q40" value="c"> De créer une famille soudée et pleine d’amour.</label><br>
+    </div>
+
+        <button class="btn" type="submit">Envoyer mes réponses</button>
+    </form>
+</div>
+
+<footer>
+    Avec amour, toujours ❤️
+</footer>
+
+</body>
+</html>
