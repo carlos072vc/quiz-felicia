@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Adresse email où tu veux recevoir les réponses
-    $to = "carlos072vc@gmail.com";
+    $to = "Carlos072vc@gmail.com";
 
     // Sujet du mail
     $subject = "Réponses au quiz - Famille avec Felicia";
